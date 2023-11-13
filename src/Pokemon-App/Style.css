@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+body{
+    background-color: #b149b1;
+}
+.header{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #9edef9;
+}
+/* .left-content .right-content{
+    flex-basis: 50%;
+} */
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 2rem;
+}
+.card{
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.card img{
+    width: 300px;
+    height: 150px;
+}
+.right-content{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 110px;
+    right: 10px;
+}
+.right-content img{
+    margin: 1.5rem;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.abilities .group{
+    background-color: #b74455;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.base-stat{
+    margin-top: 2rem;
+}
+.btn-group{
+    display: flex;
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b74455;
+    border-radius: 8px;
+}
